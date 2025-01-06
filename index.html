@@ -1,3 +1,4 @@
+<html>
 This is the backup of Owl City server
 <br>
 Current backup time: Jan 3, 2025 4:37pm GMT+7
@@ -7,22 +8,16 @@ Owlnest<br>
 
 <a href="owlnest_0.html">Owlnest: first page</a><br>
 
+Owlnest page: 
+<input id="page">
+<button type="button" onclick="goToPage()">Go</button>
 
 <script>
-function changeLink(value) {
-    // select the link
-    link = document.getElementById("buttonLink");
-    // change it's href
-    link.href = "http://owlcityserverbackup2025.netlify.app/" + value
+function goToPage() {
+  e = document.getElementById('page').value
+  var url="https://owlcityserverbackup2025.netlify.app/owlnest_"+e;  
+  
+  window.location = url;
 }
 </script>
-
-
-<form>
-    <!-- The field in which the user types the number -->
-    <input type="text" oninput="changeLink(this.value);" placeholder="Enter number here" />
-
-    <!-- The button -->
-    <a id="buttonLink"><button>Send</button></a>
-</form>
-
+</html>
