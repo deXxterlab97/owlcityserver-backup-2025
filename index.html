@@ -9,9 +9,9 @@ Because the chat history is so big, they're split into many pages. Each page cur
 <b>Directory:</b><br>
 <a href="owlnest_0.html">Owlnest: first page</a><br><br>
 Owlnest page:  
-<input id="page" type="text" onkeyup="handleKeyUp(event)" style="width: 3%" placeholder="0123">
+<input id="page" type="text" onkeyup="handleKeyUp(event)" style="width: 4%" placeholder="0123">
 <button type="button" onclick="goToOwlnestPage()">Go</button>
-</body>
+
 <script>
 function goToOwlnestPage() {
   e = document.getElementById('page').value
@@ -20,8 +20,9 @@ function goToOwlnestPage() {
 }
 function handleKeyUp(event) {
   if (event.keyCode === 13) { 
-   goToPage();
+   goToOwlnestPage();
   }
 }
 </script>
+</body>
 </html>
