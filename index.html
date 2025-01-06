@@ -8,6 +8,21 @@ Owlnest<br>
 <a href="owlnest_0.html">Owlnest: first page</a><br>
 
 
+<script>
+function changeLink(value) {
+    // select the link
+    link = document.getElementById("buttonLink");
+    // change it's href
+    link.href = "http://owlcityserverbackup2025.netlify.app/owlnest_" + value
+}
+</script>
 
 
+<form>
+    <!-- The field in which the user types the number -->
+    <input type="text" oninput="changeLink(this.value);" placeholder="Enter number here" />
+
+    <!-- The button -->
+    <a id="buttonLink"><button>Send</button></a>
+</form>
 
