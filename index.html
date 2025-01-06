@@ -1,23 +1,30 @@
 <html>
+<body style="background-color:#222222; color:white;">
 This is the backup of Owl City server
 <br>
 Current backup time: Jan 3, 2025 4:37pm GMT+7
 <br>
-Directory:<br>
+Note: page starts at 0, so the first page is 0!<br>
+Because the chat history is so big, they're split into many pages. Each page currently contains 5000 messages. Use the text box below to navigate to the page you want, or alternatively use the buttons at the end of each page to go to next or previous page.<br><br>
+<b>Directory:</b><br>
 Owlnest<br>
 
-<a href="owlnest_0.html">Owlnest: first page</a><br>
 
-Owlnest page: 
-<input id="page">
-<button type="button" onclick="goToPage()">Go</button>
 
+Owlnest page:  
+<input id="page" type="text" onkeyup="handleKeyUp(event)" style="width: 3%" placeholder="0123">
+<button type="button" onclick="goToOwlnestPage()">Go</button>
+</body>
 <script>
-function goToPage() {
+function goToOwlnestPage() {
   e = document.getElementById('page').value
   var url="https://owlcityserverbackup2025.netlify.app/owlnest_"+e;  
-  
   window.location = url;
+}
+function handleKeyUp(event) {
+  if (event.keyCode === 13) { 
+   goToPage();
+  }
 }
 </script>
 </html>
