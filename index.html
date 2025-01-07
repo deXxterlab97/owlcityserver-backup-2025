@@ -23,18 +23,37 @@ Because the chat history is so big, they're split into many pages. Each page cur
 <b>Directory:</b><br><br>
 <a href="owlnest_0.html">Owlnest: first page</a><br>
 Owlnest page (last page: 191)   
-<input id="page" type="text" onkeyup="handleKeyUp(event)" style="width: 10%" placeholder="0123">
-<button type="button" onclick="goToOwlnestPage()">Go</button>
+<input id="pageowl" type="text" onkeyup="handleOwlNestKeyUp(event)" style="width: 10%" placeholder="0123">
+<button type="button" onclick="goToOwlnestPage()">Go</button><br><br>
+
+<a href="philnest_0.html">Philnest: first page</a><br>
+Owlnest page (last page: 5)   
+<input id="pagephil" type="text" onkeyup="handlePhilNestKeyUp(event)" style="width: 10%" placeholder="0123">
+<button type="button" onclick="goToPhilnestPage()">Go</button>
+
+
+
 </p>
 <script>
 function goToOwlnestPage() {
-  e = document.getElementById('page').value
-  var url="https://owlcityserverbackup2025.netlify.app/owlnest_"+e;  
+  e = document.getElementById('pagephil').value
+  var url="https://owlcityserverbackup2025.netlify.app/owlnest/owlnest_"+e;  
   window.location = url;
 }
-function handleKeyUp(event) {
+function handleOwlNestKeyUp(event) {
   if (event.keyCode === 13) { 
    goToOwlnestPage();
+  }
+}
+
+function goToPhilnestPage() {
+  e = document.getElementById('pageowl').value
+  var url="https://owlcityserverbackup2025.netlify.app/philnest/philnest_"+e;  
+  window.location = url;
+}
+function handlePhilNestKeyUp(event) {
+  if (event.keyCode === 13) { 
+   goToPhilnestPage();
   }
 }
 </script>
