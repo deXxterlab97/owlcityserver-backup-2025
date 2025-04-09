@@ -17,7 +17,7 @@ This is the backup of <a href="https://discord.gg/owlcity">Owl City server</a> m
 <br>
 Current backup time: check the last page.
 <br>
-Note: page starts at 1, so the first page is 1, not 0 anymore!<br>
+Note: page starts at 1 for owlnest, but 0 for everything else! Future back ups will start at 1.<br>
 
 <br>
 Because some of the chat history is so big, they're split into many pages. Each page currently contains 1000 messages (for owlnest) and 5000 (for philnest and bot-channel). Use the text box below to navigate to the page you want, or alternatively use the buttons at the end of each page to go to next or previous page.
@@ -256,7 +256,7 @@ Bot-channel page (last page: 38)
 
 <script>
 function goToOwlnestPage() {
-  e = document.getElementById('pagephil').value
+  e = document.getElementById('pageowl').value
   var url="https://owlcityserverbackup2025.netlify.app/owlnest/owlnest_"+e;  
   window.location = url;
 }
