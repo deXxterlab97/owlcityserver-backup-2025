@@ -101,9 +101,52 @@ Philnest page (last page: 33)
 <button type="button" onclick="goToPhilnestPage()">Go</button>
 <br><br>
 
-Topics: making a menu soon
+Topics: 
+<br>
 
+<a href="topics/art/art_1.html">Art: first page</a><br>
+Art page (last page: 11)   
+<input id="pageart" type="text" onkeyup="handleArtKeyUp(event)" style="width: 10%" placeholder="0123">
+<button type="button" onclick="goToArtPage()">Go</button>
+<br>
 
+<a href="topics/food/food_1.html">Food: first page</a><br>
+Food page (last page: 3)   
+<input id="pagefood" type="text" onkeyup="handleFoodKeyUp(event)" style="width: 10%" placeholder="0123">
+<button type="button" onclick="goToFoodPage()">Go</button>
+<br>
+
+<a href="topics/games/games_1.html">Games: first page</a><br>
+Games page (last page: 4)   
+<input id="pagegames" type="text" onkeyup="handleGamesKeyUp(event)" style="width: 10%" placeholder="0123">
+<button type="button" onclick="goToGamesPage()">Go</button>
+<br>
+
+<a href="topics/memes/memes_1.html">Memes: first page</a><br>
+Memes page (last page: 10)   
+<input id="pagegames" type="text" onkeyup="handleMemesKeyUp(event)" style="width: 10%" placeholder="0123">
+<button type="button" onclick="goToMemesPage()">Go</button>
+<br>
+
+<a href="topics/music/music_1.html">Music: first page</a><br>
+Music page (last page: 18)   
+<input id="pagemusic" type="text" onkeyup="handleMusicKeyUp(event)" style="width: 10%" placeholder="0123">
+<button type="button" onclick="goToMusicPage()">Go</button>
+<br>
+
+<a href="topics/pics/pics-vids_1.html">Pics & vids: first page</a><br>
+Pics & vids page (last page: 7)   
+<input id="pagepics" type="text" onkeyup="handlePicsKeyUp(event)" style="width: 10%" placeholder="0123">
+<button type="button" onclick="goToPicsPage()">Go</button>
+<br>
+
+<a href="topics/tv/tv-films-books_1.html">TV, films and books: first page</a><br>
+TV, films and books page (last page: 4)   
+<input id="pageTV" type="text" onkeyup="handleTVKeyUp(event)" style="width: 10%" placeholder="0123">
+<button type="button" onclick="goToTVPage()">Go</button>
+<br>
+
+<a href="topics/art/art_1.html">Writing (1 page)</a><br><br>
 
 
 <details>
@@ -257,6 +300,7 @@ function handleOwlNestKeyUp(event) {
   }
 }
 
+
 function goToPhilnestPage() {
   e = document.getElementById('pagephil').value
   var url="https://owlcityserverbackup2025.netlify.app/philnest/philnest_"+e;  
@@ -268,6 +312,7 @@ function handlePhilNestKeyUp(event) {
   }
 }
 
+
 function goToBotPage() {
   e = document.getElementById('pagebot').value
   var url="https://owlcityserverbackup2025.netlify.app/misc/bot_channel/bot-channel_"+e;  
@@ -278,6 +323,91 @@ function handleBotKeyUp(event) {
    goToBotPage();
   }
 }
+
+
+function goToArtPage() {
+  e = document.getElementById('pageart').value
+  var url="https://owlcityserverbackup2025.netlify.app/misc/topics/art/art_"+e;  
+  window.location = url;
+}
+function handleArtKeyUp(event) {
+  if (event.keyCode === 13) { 
+   goToArtPage();
+  }
+}
+
+
+function goToFoodPage() {
+  e = document.getElementById('pagefood').value
+  var url="https://owlcityserverbackup2025.netlify.app/misc/topics/food/food_"+e;  
+  window.location = url;
+}
+function handleFoodKeyUp(event) {
+  if (event.keyCode === 13) { 
+   goToFoodPage();
+  }
+}
+
+
+function goToGamesPage() {
+  e = document.getElementById('pagegames').value
+  var url="https://owlcityserverbackup2025.netlify.app/misc/topics/games/games_"+e;  
+  window.location = url;
+}
+function handleGamesKeyUp(event) {
+  if (event.keyCode === 13) { 
+   goToGamesPage();
+  }
+}
+
+function goToMemesPage() {
+  e = document.getElementById('pagememes').value
+  var url="https://owlcityserverbackup2025.netlify.app/misc/topics/memes/memes_"+e;  
+  window.location = url;
+}
+function handleMemesKeyUp(event) {
+  if (event.keyCode === 13) { 
+   goToMemesPage();
+  }
+}
+
+
+function goToMusicPage() {
+  e = document.getElementById('pagemusic').value
+  var url="https://owlcityserverbackup2025.netlify.app/misc/topics/music/music_"+e;  
+  window.location = url;
+}
+function handleMusicKeyUp(event) {
+  if (event.keyCode === 13) { 
+   goToMusicPage();
+  }
+}
+
+
+function goToPicsPics() {
+  e = document.getElementById('pagepics').value
+  var url="https://owlcityserverbackup2025.netlify.app/misc/topics/pics/pics-vids_"+e;  
+  window.location = url;
+}
+function handlePicsKeyUp(event) {
+  if (event.keyCode === 13) { 
+   goToPicsPage();
+  }
+}
+
+function goToTVPage() {
+  e = document.getElementById('pageTV').value
+  var url="https://owlcityserverbackup2025.netlify.app/misc/topics/tv/tv-films-books_"+e;  
+  window.location = url;
+}
+function handleTVKeyUp(event) {
+  if (event.keyCode === 13) { 
+   goToTVPage();
+  }
+}
+
+
+
 </script>
 </body>
 </html>
